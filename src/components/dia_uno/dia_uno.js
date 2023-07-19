@@ -26,8 +26,7 @@ const DiaUno = () => {
     };
 
     return (
-
-        <section>
+        <div className="secciones">
             <div className="container">
                 {fotos.map((foto, index) => (
                     <div
@@ -40,7 +39,7 @@ const DiaUno = () => {
                     </div>
                 ))}
             </div>
-        </section>
+        </div>
 
     );
 };
