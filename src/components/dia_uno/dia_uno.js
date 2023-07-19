@@ -36,8 +36,6 @@ const DiaUno = () => {
                         style={{backgroundImage: `url('${foto.image}')`}}
                         onClick={() => handlePanelClick(index)}
                     >
-
-
                         <h3>{foto.title}</h3>
                     </div>
                 ))}
