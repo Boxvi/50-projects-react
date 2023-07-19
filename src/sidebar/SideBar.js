@@ -76,6 +76,7 @@ const SideBar = () => {
                 <span></span>
                 <span></span>
                 <span></span>
+                <span></span>
             </SideBarToggler>
         </>
     );

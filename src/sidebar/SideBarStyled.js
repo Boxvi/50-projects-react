@@ -69,11 +69,11 @@ export const SideBarWrapper = styled.div`
 
 export const SideBarToggler = styled.div`
   position: fixed;
-  top: 4vh;
-  right: 4vw;
+  top: 8vh;
+  right: 5vw;
   z-index: 99;
-  width: 1.8rem;
-  height: 1.3rem;
+  width: 4rem;
+  height: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -82,9 +82,8 @@ export const SideBarToggler = styled.div`
 
   span {
     width: 100%;
-    height: 2.4px;
-    background-color: var(--color-3);
-    opacity: 0.875;
+    height: 4px;
+    background-color:white;
     transition: all 0.3s ease;
   }
 
@@ -104,7 +103,7 @@ export const SideBarToggler = styled.div`
     }
 
     span:first-child {
-      transform: rotate(45deg);
+      transform: rotate(50deg);
     }
 
     span:nth-child(2) {
@@ -113,7 +112,7 @@ export const SideBarToggler = styled.div`
     }
 
     span:last-child {
-      transform: rotate(-45deg);
+      transform: rotate(-50deg);
     }
   }
 `;
