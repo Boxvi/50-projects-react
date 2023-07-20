@@ -6,6 +6,13 @@ export const SideBarDataLinks = [
         icon1: 'bi bi-house',
     },
     {
+        id: 0,
+        name: 'EXTRAS ',
+        path: '/extras',
+        icon1: 'bi bi-plus-square',
+    },
+
+    {
         id: 1,
         name: 'DIA -> ',
         path: '/dia_uno',
@@ -19,12 +26,13 @@ export const SideBarDataLinks = [
         icon1: 'bi bi-0-square',
         icon2: 'bi bi-2-square',
     },
-    // {
-    //     id: 3,
-    //     name: 'Dia 03',
-    //     icon1: 'bi bi-0-square',
-    //     icon2: 'bi bi-3-square',
-    // },
+    {
+        id: 3,
+        name: 'DIA -> ',
+        path: '/dia_tres',
+        icon1: 'bi bi-0-square',
+        icon2: 'bi bi-3-square',
+    },
     // {
     //     id: 4,
     //     name: 'Dia 04',
@@ -187,4 +195,7 @@ export const SideBarDataLinks = [
     //     icon1: 'bi bi-3-square',
     //     icon2: 'bi bi-0-square',
     // },
+
+
+
 ]
