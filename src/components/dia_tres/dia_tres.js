@@ -51,22 +51,23 @@ export const DiaTres = () => {
                 </div>
 
                 <div className="content">
-                    {resultados &&
+                    {resultados && (
                         <>
                             <h1>{resultados.first_name} {resultados.last_name}</h1>
                             <small>{resultados.uid}</small>
                             <br/>
 
                             <p>Ubicacion:</p>
-                            <ul>
-                                <li>Ciudad: {resultados.address.city}</li>
-                                <li>Calle: {resultados.address.street_name}</li>
-                                <li>Direccion: {resultados.address.street_address}</li>
-                                <li>Code Zip: {resultados.address.zip_code}</li>
-                                <li>Estado: {resultados.address.state}</li>
-                                <li>Pais: {resultados.address.country}</li>
-                            </ul>
-
+                            {resultados.address && (
+                                <ul>
+                                    <li>Ciudad: {resultados.address.city ?? 'N/A'}</li>
+                                    <li>Calle: {resultados.address.street_name ?? 'N/A'}</li>
+                                    <li>Direccion: {resultados.address.street_address ?? 'N/A'}</li>
+                                    <li>Code Zip: {resultados.address.zip_code ?? 'N/A'}</li>
+                                    <li>Estado: {resultados.address.state ?? 'N/A'}</li>
+                                    <li>Pais: {resultados.address.country ?? 'N/A'}</li>
+                                </ul>
+                            )}
 
                             <br/>
 
@@ -74,22 +75,27 @@ export const DiaTres = () => {
                             <img src={resultados.avatar} alt={resultados.id}/>
                             <br/>
                             <p>Empleo: </p>
-                            <ul>
-                                <li>Titulo: {resultados.employment.title}</li>
-                                <li>Habilidades: {resultados.employment.key_skill}</li>
-                            </ul>
+                            {resultados.employment && (
+                                <ul>
+                                    <li>Titulo: {resultados.employment.title ?? 'N/A'}</li>
+                                    <li>Habilidades: {resultados.employment.key_skill ?? 'N/A'}</li>
+                                </ul>
+                            )}
                             <br/>
                             <p>Subscripciones: </p>
-                            <ul>
-                                <li>Plan: {resultados.subscription.plan}</li>
-                                <li>Estatus: {resultados.subscription.status}</li>
-                                <li>Metodo de pago: {resultados.subscription.payment_method}</li>
-                                <li>Tiempo: {resultados.subscription.term}</li>
-                            </ul>
+                            {resultados.employment && (
+                                <ul>
+                                    <li>Plan: {resultados.subscription.plan ?? 'N/A'}</li>
+                                    <li>Estatus: {resultados.subscription.status ?? 'N/A'}</li>
+                                    <li>Metodo de pago: {resultados.subscription.payment_method ?? 'N/A'}</li>
+                                    <li>Tiempo: {resultados.subscription.term ?? 'N/A'}</li>
+                                </ul>
+                            )}
                             <br/>
 
                         </>
-                    }
+
+                    )}
                 </div>
             </div>
 
