@@ -5,6 +5,7 @@ import SideBar from "./sidebar/SideBar";
 import {DiaDos} from "./components/dia_dos/dia_dos";
 import DiaTres from "./components/dia_tres/dia_tres";
 import Extras from "./components/extras/extras";
+import DiaCuatro from "./components/dia_cuatro/dia_cuatro";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path='/dia_uno' element={<DiaUno/>}/>
                 <Route path='/dia_dos' element={<DiaDos/>}/>
                 <Route path='/dia_tres' element={<DiaTres/>}/>
+                <Route path='/dia_cuatro' element={<DiaCuatro/>}/>
             </Routes>
         </BrowserRouter>
 
@@ -24,11 +26,3 @@ function App() {
 }
 
 export default App;
-/*
-    // <React.StrictMode>
-    //     <BrowserRouter>
-    //         <SideBar/>
-    //         <App/>
-    //     </BrowserRouter>
-    // </React.StrictMode>
- */
