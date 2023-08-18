@@ -11,7 +11,7 @@ const Home = () => {
             <h2 style={{textAlign: "center"}}><i className="bi bi-telephone"></i>Contacto: +593996474990</h2>
             <br/>
             <div style={{textAlign: "center"}}>
-                <button style={{backgroundColor: "aqua", borderRadius: "15px"}}><Link to={"/dia_tres"}>Nuevo Dia Click
+                <button style={{backgroundColor: "aqua", borderRadius: "15px"}}><Link to={"/dia_cuatro"}>Nuevo Dia Click
                     AKI</Link></button>
 
             </div>

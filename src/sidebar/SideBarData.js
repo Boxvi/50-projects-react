@@ -6,12 +6,17 @@ export const SideBarDataLinks = [
         icon1: 'bi bi-house',
     },
     {
-        id: 0,
+        id: 1000,
         name: 'EXTRAS ',
         path: '/extras',
         icon1: 'bi bi-plus-square',
     },
-
+    {
+        id: 1001,
+        name: 'TELEVISION ',
+        path: '/television',
+        icon1: 'bi bi-tv',
+    },
     {
         id: 1,
         name: 'DIA -> ',

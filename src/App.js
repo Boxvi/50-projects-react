@@ -6,6 +6,7 @@ import {DiaDos} from "./components/dia_dos/dia_dos";
 import DiaTres from "./components/dia_tres/dia_tres";
 import Extras from "./components/extras/extras";
 import DiaCuatro from "./components/dia_cuatro/dia_cuatro";
+import Television from "./components/television/television";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path='/dia_dos' element={<DiaDos/>}/>
                 <Route path='/dia_tres' element={<DiaTres/>}/>
                 <Route path='/dia_cuatro' element={<DiaCuatro/>}/>
+                <Route path='/television' element={<Television/>}/>
             </Routes>
         </BrowserRouter>
 
