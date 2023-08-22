@@ -2,7 +2,7 @@ h1 {
     margin: 10px;
 }
 
-.box {
+.box6 {
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -16,14 +16,14 @@ h1 {
     transition: transform 0.4s ease;
 }
 
-.box:nth-of-type(even) {
+.box6:nth-of-type(even) {
     transform: translateX(-400%);
 }
 
-.box.show {
+.box6.show6 {
     transform: translateX(0);
 }
 
-.box h2 {
+.box6 h2 {
     font-size: 45px;
 }

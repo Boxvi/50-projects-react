@@ -1,15 +1,16 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./home/Home";
-import DiaUno from "./components/dia_uno/dia_uno";
+import DiaUno from "./components/DIEZ/dia_uno/dia_uno";
 import SideBar from "./sidebar/SideBar";
-import {DiaDos} from "./components/dia_dos/dia_dos";
-import DiaTres from "./components/dia_tres/dia_tres";
+import {DiaDos} from "./components/DIEZ/dia_dos/dia_dos";
+import DiaTres from "./components/DIEZ/dia_tres/dia_tres";
 import Extras from "./components/extras/extras";
-import DiaCuatro from "./components/dia_cuatro/dia_cuatro";
+import DiaCuatro from "./components/DIEZ/dia_cuatro/dia_cuatro";
 import Television from "./components/television/television";
-import DiaCinco from "./components/dia_cinco/dia_cinco";
-import DiaSeis from "./components/dia_seis/dia_seis";
-import {DiaSiete} from "./components/dia_siete/dia_siete";
+import DiaCinco from "./components/DIEZ/dia_cinco/dia_cinco";
+import DiaSeis from "./components/DIEZ/dia_seis/dia_seis";
+import {DiaSiete} from "./components/DIEZ/dia_siete/dia_siete";
+import DiaOcho from "./components/DIEZ/dia_ocho/dia_ocho";
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                 <Route path='/dia_cinco' element={<DiaCinco/>}/>
                 <Route path='/dia_seis' element={<DiaSeis/>}/>
                 <Route path='/dia_siete' element={<DiaSiete/>}/>
+                <Route path='/dia_ocho' element={<DiaOcho/>}/>
             </Routes>
         </BrowserRouter>
 

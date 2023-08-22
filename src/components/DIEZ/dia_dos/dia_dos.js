@@ -37,35 +37,38 @@ export const DiaDos = () => {
     }, [paginaActual, circles]);
 
     return (
-        <div className="secciones2">
-            <div className="container2">
-                <div className="progress-container">
-                    <div className="progress" id="progress"></div>
-                    {circles.map((circle, index) => (
-                        <div key={index + 1} className={`circle ${circle <= paginaActual ? 'active' : ''}`}>
-                            {index + 1}</div>
-                    ))}
+        <>
+            <center><h1>Progress Steps / Pasos de progreso</h1></center>
+            <div className="secciones2">
+                <div className="container2">
+                    <div className="progress-container">
+                        <div className="progress" id="progress"></div>
+                        {circles.map((circle, index) => (
+                            <div key={index + 1} className={`circle ${circle <= paginaActual ? 'active' : ''}`}>
+                                {index + 1}</div>
+                        ))}
 
+                    </div>
+
+                    <button className="btn"
+                            id="anterior"
+                            key="anterior"
+                            onClick={handlePrev}
+                            disabled={paginaActual === 1}
+                    >ANTERIOR
+                    </button>
+
+                    <button
+                        className="btn"
+                        id="siguiente"
+                        key="siguiente"
+                        onClick={handleNext}
+                        disabled={paginaActual === Math.ceil(resultados.length / resultadorPorPagina)}
+                    >SIGUIENTE
+                    </button>
                 </div>
-
-                <button className="btn"
-                        id="anterior"
-                        key="anterior"
-                        onClick={handlePrev}
-                        disabled={paginaActual === 1}
-                >ANTERIOR
-                </button>
-
-                <button
-                    className="btn"
-                    id="siguiente"
-                    key="siguiente"
-                    onClick={handleNext}
-                    disabled={paginaActual === Math.ceil(resultados.length / resultadorPorPagina)}
-                >SIGUIENTE
-                </button>
             </div>
-        </div>
+        </>
     )
 
 };

@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
-import "../dia_dos/dia_dos.css";
-import "../dia_uno/dia_uno.css";
+import "../DIEZ/dia_dos/dia_dos.css";
+import "../DIEZ/dia_uno/dia_uno.css";
 
 export const Extras = () => {
 

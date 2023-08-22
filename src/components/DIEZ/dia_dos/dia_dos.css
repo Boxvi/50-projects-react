@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+
 :root {
     /*--line-border-fill: #61DAFB;*/
     /*--line-border-empty: #CC48CC;*/
@@ -8,9 +9,6 @@
     --color-letras: #ffff;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 .secciones2 {
     font-family: 'Roboto', "Comic Sans MS", serif;

@@ -26,18 +26,21 @@ const DiaUno = () => {
     };
 
     return (
-        <div className="secciones">
-            <div className="container">
-                {fotos.map((foto, index) => (
-                    <div
-                        key={foto.id}
-                        className={`panel ${foto.active ? 'active' : ''}`}
-                        style={{backgroundImage: `url('${foto.image}')`}}
-                        onClick={() => handlePanelClick(index)}
-                    >
-                        <h3>{foto.title}</h3>
-                    </div>
-                ))}
+        <div className={"styles-for-dia-uno"}>
+            <center><h1>Expanding Cards / Ampliación de tarjetas</h1></center>
+            <div className="secciones">
+                <div className="container">
+                    {fotos.map((foto, index) => (
+                        <div
+                            key={foto.id}
+                            className={`panel ${foto.active ? 'active' : ''}`}
+                            style={{backgroundImage: `url('${foto.image}')`}}
+                            onClick={() => handlePanelClick(index)}
+                        >
+                            <h3>{foto.title}</h3>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
 

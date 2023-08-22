@@ -66,12 +66,13 @@ export const SideBarDataLinks = [
         icon1: 'bi bi-0-square',
         icon2: 'bi bi-7-square',
     },
-    // {
-    //     id: 8,
-    //     name: 'DIA -> ',
-    //     icon1: 'bi bi-0-square',
-    //     icon2: 'bi bi-8-square',
-    // },
+    {
+        id: 8,
+        name: 'DIA -> ',
+        path: '/dia_ocho',
+        icon1: 'bi bi-0-square',
+        icon2: 'bi bi-8-square',
+    },
     // {
     //     id: 9,
     //     name: 'DIA -> ',

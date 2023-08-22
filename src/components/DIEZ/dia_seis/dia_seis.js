@@ -10,15 +10,15 @@ const DiaSeis = () => {
     const checkBoxes = () => {
         const triggerBottom = window.innerHeight / 5 * 4;
 
-        const boxElements = document.querySelectorAll('.box');
+        const boxElements = document.querySelectorAll('.box6');
 
         boxElements.forEach(box => {
             const boxTop = box.getBoundingClientRect().top;
 
             if (boxTop < triggerBottom) {
-                box.classList.add('show');
+                box.classList.add('show6');
             } else {
-                box.classList.remove('show');
+                box.classList.remove('show6');
             }
         });
 
@@ -102,25 +102,22 @@ const DiaSeis = () => {
             default:
                 return "#000000";  // Color negro por defecto
         }
-
-
     };
 
     return (
+
         <section className={"section"}>
-            <h1>Animacion del scroll</h1>
-            
-            {pokemonList.map((pokemon, index) => (
-                <div className="box" style={{backgroundColor: getTypeColor(pokemon.type)}} key={pokemon.name + index}>
+            <center><h1>Scroll Animation / Animación de desplazamiento</h1></center>
+            {pokemonList && pokemonList.map((pokemon, index) => (
+                <div className="box6" style={{backgroundColor: getTypeColor(pokemon.type)}}
+                     key={pokemon.name + index}>
                     <h2>{pokemon.name}</h2>
                     <img src={pokemon.image} alt={pokemon.name} width={"30%"}/>
                 </div>
             ))}
         </section>
+
     );
 };
 
 export default DiaSeis;
-/*
-
- */
