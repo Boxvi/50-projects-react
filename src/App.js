@@ -11,6 +11,9 @@ import DiaCinco from "./components/DIEZ/dia_cinco/dia_cinco";
 import DiaSeis from "./components/DIEZ/dia_seis/dia_seis";
 import {DiaSiete} from "./components/DIEZ/dia_siete/dia_siete";
 import DiaOcho from "./components/DIEZ/dia_ocho/dia_ocho";
+import DiaNueve from "./components/DIEZ/dia_nueve/dia_nueve";
+import DiaDiez from "./components/DIEZ/dia_diez/dia_diez";
+import Dia11 from "./components/VEINTE/dia_11/dia_11";
 
 function App() {
     return (
@@ -28,6 +31,9 @@ function App() {
                 <Route path='/dia_seis' element={<DiaSeis/>}/>
                 <Route path='/dia_siete' element={<DiaSiete/>}/>
                 <Route path='/dia_ocho' element={<DiaOcho/>}/>
+                <Route path='/dia_nueve' element={<DiaNueve/>}/>
+                <Route path='/dia_diez' element={<DiaDiez/>}/>
+                <Route path='/dia_11' element={<Dia11/>}/>
             </Routes>
         </BrowserRouter>
 

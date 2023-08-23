@@ -5,7 +5,6 @@ import axios from "axios";
 export const DiaOcho = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [data, setData] = useState({})
     const [errorMessage, setErrorMessage] = useState({mensaje: '', color: '', backgroundColor: ''});
 
     useEffect(() => {
@@ -38,7 +37,7 @@ export const DiaOcho = () => {
                 color: 'green',
                 backgroundColor: '#c3f9c4',
             })
-            setData(response.data);
+            //setData(response.data);
         } catch (error) {
             if (error.response && error.response.status === 400) {
                 setErrorMessage({
@@ -62,8 +61,8 @@ export const DiaOcho = () => {
         <>
             <section className={"section"}>
                 <h1>LOGIN</h1>
-                <center><p>En este apartado se uso la api de <a href={"https://reqres.in/"}
-                                                                target={"_blank"}>reqres.in</a>
+                <center><p>En este apartado se uso la api de <a href="https://reqres.in/"
+                                                                target="_blank" rel="noopener noreferrer">reqres.in</a>
                     para poder probar solo ingrese los datos a continuacion
                 </p>
                     <br/>
@@ -92,7 +91,7 @@ export const DiaOcho = () => {
 
                         <button className={"btn8"} type={"submit"}><strong>INGRESAR</strong></button>
 
-                        <p className={"text8"}>No tienes una cuenta? <a className={"a8"} href="#">Registro</a></p>
+                        <p className={"text8"}>No tienes una cuenta? Registro</p>
 
                         {errorMessage && (
                             <div className="error-message" style={{
