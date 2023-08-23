@@ -5,18 +5,18 @@ export const SideBarDataLinks = [
         path: '/',
         icon1: 'bi bi-house',
     },
-    {
-        id: 1000,
-        name: 'EXTRAS ',
-        path: '/extras',
-        icon1: 'bi bi-plus-square',
-    },
-    {
-        id: 1001,
-        name: 'TELEVISION ',
-        path: '/television',
-        icon1: 'bi bi-tv',
-    },
+    // {
+    //     id: 1000,
+    //     name: 'EXTRAS ',
+    //     path: '/extras',
+    //     icon1: 'bi bi-plus-square',
+    // },
+    // {
+    //     id: 1001,
+    //     name: 'TELEVISION ',
+    //     path: '/television',
+    //     icon1: 'bi bi-tv',
+    // },
 
 
 ]
